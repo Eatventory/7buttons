@@ -206,7 +206,7 @@
       }
   
       // 실제 서버로 전송
-      fetch("http://localhost:4000/api/analytics/collect", {
+      fetch("http://localhost:3000/api/analytics/collect", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

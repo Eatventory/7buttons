@@ -2,7 +2,8 @@ import { StrictMode } from 'react'
 import { createRoot } from 'react-dom/client'
 import './index.css'
 import App from './App.tsx'
-import "../klicklab_sdk.js";
+// import "../klicklab_sdk.js";
+
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode>
