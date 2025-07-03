@@ -1,3 +1,4 @@
+import UserSelector from "./UserSelector";
 import './App.css'
 
 function App() {
@@ -13,7 +14,8 @@ function App() {
 
   return (
     <div style={{ display: 'flex', flexDirection: 'column', alignItems: 'center', minHeight: '100vh', justifyContent: 'center' }}>
-      <h1>7개의 버튼</h1>
+      <UserSelector />
+      <h1>7 Buttons</h1>
       <div style={{ display: 'flex', gap: '16px' }}>
         {buttonData.map((button, idx) => (
           <button 

@@ -1,0 +1,131 @@
+.user-selector {
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    width: 240px;
+    background-color: white;
+    border: 1px solid #ccc;
+    padding: 14px;
+    border-radius: 8px;
+    z-index: 9999;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    font-family: sans-serif;
+}
+
+.user-selector h3 {
+    margin-top: 0;
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+.section {
+    margin-bottom: 12px;
+}
+
+.section label {
+    display: block;
+    margin-bottom: 6px;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.options {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 6px;
+}
+
+.options button {
+    padding: 6px 10px;
+    border: 1px solid #aaa;
+    border-radius: 20px;
+    background-color: #f2f2f2;
+    cursor: pointer;
+    font-size: 13px;
+}
+
+.options button.active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.toggle-header {
+    font-weight: bold;
+    display: flex;
+    justify-content: space-between;
+    cursor: pointer;
+    padding: 0.5rem;
+    background-color: #f1f1f1;
+    border-radius: 6px;
+}
+
+.slide-panel {
+    overflow: hidden;
+    transition: max-height 0.4s ease;
+    max-height: 0;
+}
+
+.slide-panel.open {
+    transition: max-height 0.4s ease;
+}
+
+.panel-content {
+    padding: 1rem;
+    background-color: #fafafa;
+    border-radius: 6px;
+    margin-top: 0.5rem;
+}
+
+.options button {
+    margin: 0 0.3rem 0.3rem 0;
+    padding: 6px 12px;
+    border: 1px solid #ccc;
+    background-color: white;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.options .active {
+    background-color: #007bff;
+    color: white;
+    border-color: #007bff;
+}
+
+.confirm-button-container {
+    margin-top: 1rem;
+    text-align: right;
+}
+
+.confirm-button {
+    padding: 6px 12px;
+    font-weight: bold;
+    background-color: #333;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.confirm-button:hover {
+    background-color: #555;
+}
+
+.arrow-icon {
+    display: inline-block;
+    transition: transform 0.3s ease;
+}
+
+.arrow-icon.open {
+    transform: rotate(180deg);
+}
+
+.section input {
+    width: 100% auto;
+    padding: 6px 10px;
+    margin-top: 4px;
+    font-size: 14px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+}
