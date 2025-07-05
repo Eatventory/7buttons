@@ -2,7 +2,6 @@ import { useState, useEffect, useRef } from "react";
 import "./UserSelector.css";
 
 export default function UserSelector() {
-  const [id, setId] = useState("");
   const [gender, setGender] = useState<string | null>(null);
   const [ageGroup, setAgeGroup] = useState<string | null>(null);
   const [open, setOpen] = useState(false);
@@ -13,7 +12,6 @@ export default function UserSelector() {
     if (stored) {
       try {
         const user = JSON.parse(stored);
-        setId(user.id || "");
         setGender(user.gender ?? null);
         setAgeGroup(user.age ?? null);
       } catch (e) {
@@ -24,7 +22,7 @@ export default function UserSelector() {
 
   const handleConfirm = () => {
     const data = {
-      id: id.trim(),
+      id: 1234,
       gender,
       age: ageGroup
     };
@@ -47,16 +45,6 @@ export default function UserSelector() {
         }}
       >
         <div className="panel-content">
-          <div className="section">
-            <label>ID</label>
-            <input
-              type="text"
-              value={id}
-              onChange={(e) => setId(e.target.value)}
-              placeholder="Your ID"
-            />
-          </div>
-
           <div className="section">
             <label>Gender</label>
             <div className="options">
