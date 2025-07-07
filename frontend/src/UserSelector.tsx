@@ -21,10 +21,15 @@ export default function UserSelector() {
   }, []);
 
   const handleConfirm = () => {
+    const parsedAge =
+      typeof ageGroup === "string" && ageGroup.endsWith("s")
+        ? parseInt(ageGroup.replace("s", ""), 10)
+        : null;
+
     const data = {
       id: 1234,
       gender,
-      age: ageGroup
+      age: parsedAge
     };
     localStorage.setItem("user_data", JSON.stringify(data));
     setOpen(false);
