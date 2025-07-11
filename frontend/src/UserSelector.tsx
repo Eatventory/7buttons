@@ -27,7 +27,7 @@ export default function UserSelector() {
         : null;
 
     const data = {
-      id: 1234,
+      id: 123456,
       gender,
       age: parsedAge
     };
